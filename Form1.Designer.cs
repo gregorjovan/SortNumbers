@@ -41,6 +41,7 @@
 			txtInputNumbers.Name = "txtInputNumbers";
 			txtInputNumbers.Size = new Size(641, 83);
 			txtInputNumbers.TabIndex = 0;
+			txtInputNumbers.TextChanged += txtInputNumbers_TextChanged;
 			// 
 			// lblInput
 			// 
@@ -59,6 +60,7 @@
 			btnSort.TabIndex = 2;
 			btnSort.Text = "Uredi";
 			btnSort.UseVisualStyleBackColor = true;
+			btnSort.Click += btnSort_Click;
 			// 
 			// label1
 			// 
