@@ -31,55 +31,82 @@
 			txtInputNumbers = new TextBox();
 			lblInput = new Label();
 			btnSort = new Button();
-			label1 = new Label();
+			lblResult = new Label();
+			chkDownload = new CheckBox();
+			chkAddSemicolon = new CheckBox();
 			SuspendLayout();
 			// 
 			// txtInputNumbers
 			// 
-			txtInputNumbers.Location = new Point(12, 147);
+			txtInputNumbers.Location = new Point(10, 110);
+			txtInputNumbers.Margin = new Padding(3, 2, 3, 2);
 			txtInputNumbers.Multiline = true;
 			txtInputNumbers.Name = "txtInputNumbers";
-			txtInputNumbers.Size = new Size(641, 83);
+			txtInputNumbers.Size = new Size(561, 63);
 			txtInputNumbers.TabIndex = 0;
 			txtInputNumbers.TextChanged += txtInputNumbers_TextChanged;
 			// 
 			// lblInput
 			// 
 			lblInput.AutoSize = true;
-			lblInput.Location = new Point(12, 111);
+			lblInput.Location = new Point(10, 83);
 			lblInput.Name = "lblInput";
-			lblInput.Size = new Size(92, 20);
+			lblInput.Size = new Size(74, 15);
 			lblInput.TabIndex = 1;
 			lblInput.Text = "Vnesi števila:";
 			// 
 			// btnSort
 			// 
-			btnSort.Location = new Point(659, 147);
+			btnSort.Location = new Point(577, 110);
+			btnSort.Margin = new Padding(3, 2, 3, 2);
 			btnSort.Name = "btnSort";
-			btnSort.Size = new Size(129, 83);
+			btnSort.Size = new Size(113, 62);
 			btnSort.TabIndex = 2;
 			btnSort.Text = "Uredi";
 			btnSort.UseVisualStyleBackColor = true;
 			btnSort.Click += btnSort_Click;
 			// 
-			// label1
+			// lblResult
 			// 
-			label1.AutoSize = true;
-			label1.Location = new Point(12, 252);
-			label1.Name = "label1";
-			label1.Size = new Size(50, 20);
-			label1.TabIndex = 3;
-			label1.Text = "label1";
+			lblResult.AutoSize = true;
+			lblResult.Location = new Point(10, 251);
+			lblResult.Name = "lblResult";
+			lblResult.Size = new Size(49, 15);
+			lblResult.TabIndex = 3;
+			lblResult.Text = "Rezultat";
+			// 
+			// chkDownload
+			// 
+			chkDownload.AutoSize = true;
+			chkDownload.Location = new Point(12, 192);
+			chkDownload.Name = "chkDownload";
+			chkDownload.Size = new Size(191, 19);
+			chkDownload.TabIndex = 4;
+			chkDownload.Text = "Ob kliku na uredi shrani na disk";
+			chkDownload.UseVisualStyleBackColor = true;
+			// 
+			// chkAddSemicolon
+			// 
+			chkAddSemicolon.AutoSize = true;
+			chkAddSemicolon.Location = new Point(209, 192);
+			chkAddSemicolon.Name = "chkAddSemicolon";
+			chkAddSemicolon.Size = new Size(172, 19);
+			chkAddSemicolon.TabIndex = 5;
+			chkAddSemicolon.Text = "Avtomatsko dodaj podpičje";
+			chkAddSemicolon.UseVisualStyleBackColor = true;
 			// 
 			// frmMain
 			// 
-			AutoScaleDimensions = new SizeF(8F, 20F);
+			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(800, 450);
-			Controls.Add(label1);
+			ClientSize = new Size(700, 338);
+			Controls.Add(chkAddSemicolon);
+			Controls.Add(chkDownload);
+			Controls.Add(lblResult);
 			Controls.Add(btnSort);
 			Controls.Add(lblInput);
 			Controls.Add(txtInputNumbers);
+			Margin = new Padding(3, 2, 3, 2);
 			Name = "frmMain";
 			Text = "Sort your numbers!";
 			ResumeLayout(false);
@@ -91,6 +118,8 @@
 		private TextBox txtInputNumbers;
 		private Label lblInput;
 		private Button btnSort;
-		private Label label1;
+		private Label lblResult;
+		private CheckBox chkDownload;
+		private CheckBox chkAddSemicolon;
 	}
 }
