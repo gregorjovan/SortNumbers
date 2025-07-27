@@ -88,6 +88,8 @@
 			// chkAddSemicolon
 			// 
 			chkAddSemicolon.AutoSize = true;
+			chkAddSemicolon.Checked = true;
+			chkAddSemicolon.CheckState = CheckState.Checked;
 			chkAddSemicolon.Location = new Point(209, 192);
 			chkAddSemicolon.Name = "chkAddSemicolon";
 			chkAddSemicolon.Size = new Size(172, 19);
