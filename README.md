@@ -12,5 +12,6 @@
 
 ## Možnosti izboljšav
 - Dodal bi več možnosti za izbiro različnih algoritmov za sortiranje (npr. QuickSort, MergeSort).
+- Uporaba IComparable, morda generična sort metoda
 - Izboljšal bi uporabniški vmesnik (npr. modernejši dizajn, validacija vnosa).
 - Za validacijo vnosa se tudi lahko implementira ValidationService in uporabi preko DI
